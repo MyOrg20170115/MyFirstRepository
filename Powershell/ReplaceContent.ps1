@@ -3,7 +3,7 @@ Param(
     [parameter(mandatory=$true)][string]$AfterStr,
     [parameter(mandatory=$true)][string]$Comment
 )
-$Date = Date -Format "yyy/MM/dd"
+$Date = Date -Format "yyyy/MM/dd"
 
 $AfterStr = @"
 '/ FIX:$Date ${Comment}
